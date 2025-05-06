@@ -1,0 +1,15 @@
+recipe: default.v1
+language: en
+pipeline:
+- name: CompactLLMCommandGenerator
+  llm:
+    model_group: gemini_llm
+
+policies:
+- name: FlowPolicy
+  model_group: gemini
+- name: IntentlessPolicy
+  model_group: gemini
+- name: RulePolicy
+  model_group: gemini
+assistant_id: 20250417-201416-principal-leadership
