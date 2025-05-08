@@ -54,7 +54,9 @@ model_groups:
     models:
       - provider: gemini
         model: gemini-pro
-        base_url: http://localhost:4000
+        base_url: https://generativelanguage.googleapis.com/v1beta
         api_key: ${GEMINI_API_KEY}
+        litellm_extra_params:
+          set_verbose: true
         request_timeout: 7
         max_tokens: 256
